@@ -6,6 +6,8 @@ Introduction to Snap packages for Ubuntu
 2. Create the following directories
 
 ```bash
+# move to project root
+mkdir code
 cd code
 mkdir src
 mkdir test
@@ -19,8 +21,8 @@ cd src
 nano main.c # Write your code here
 ```
 
+src/main.c
 ```c
-// src/main.c
 #include <stdio.h>
 int main(int argc, char *argv[]) {
     puts("Hello World");
@@ -35,7 +37,9 @@ cd ..
 nano Makefile.am
 ```
 
+Makefile.am
 ```am
+# subdir-objects flag added to enable backwards compatibility. Will be enabled by default in the future.
 AUTOMAKE_OPTIONS = subdir-objects
 bin_PROGRAMS = snap_basic
 
