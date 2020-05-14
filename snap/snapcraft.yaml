@@ -17,7 +17,7 @@ parts:
     # plugin: nil # commonly used frameworks
     plugin: autotools
     # source: # github https link / package name
-    source: src
+    source: code
     # build-packages: [] # required to build
     build-packages: [automake, pkg-config, g++, make, git, libtool]
     # stage-packages: [] # required to run
