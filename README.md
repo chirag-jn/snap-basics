@@ -104,7 +104,7 @@ make
 8. Rebuilding after making any changes to src/main.c
 ```
 cd src
-# make changes to main.src
+# make changes to main.c
 cd ../build
 make
 ./snap_basic
