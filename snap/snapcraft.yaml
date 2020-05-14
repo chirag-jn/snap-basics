@@ -19,7 +19,7 @@ parts:
     # source: # github https link / package name
     source: .
     # build-packages: [] # required to build
-    build-packages: [pkg-config, g++, make, git]
+    build-packages: [pkg-config, g++, make, git, automake, libtool]
     # stage-packages: [] # required to run
     stage-packages: [gnome-themes-standard]
 # apps:
