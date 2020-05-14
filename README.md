@@ -1,6 +1,9 @@
 # snap-basics
 Introduction to Snap packages for Ubuntu
 
+## Snapcraft Setup
+
+
 ## Autotools Setup
 1. Go to the proj directory 'snap-basic'
 2. Create the following directories
@@ -111,4 +114,5 @@ make
 ```
 
 #### References
-1. https://www.youtube.com/watch?v=dc1kEJvS248
+1. https://snapcraft.io/docs/
+2. https://www.youtube.com/watch?v=dc1kEJvS248
