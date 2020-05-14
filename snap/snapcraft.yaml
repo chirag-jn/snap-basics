@@ -7,11 +7,18 @@ description: |
   most important story about your snap. Keep it under 100 words though,
   we live in tweetspace and your description wants to look good in the snap
   store.
-
 grade: devel # must be 'stable' to release into candidate/stable channels
 confinement: devmode # use 'strict' once you have the right plugs and slots
-
+# icon: gui/icon.png 
 parts:
-  my-part:
+# parts are used to describe your application, where its various components can be found, its build and run-time requirements, and those of its dependencies.
+  my-part: # arbitary
     # See 'snapcraft plugins'
-    plugin: nil
+    # plugin: nil # commonly used frameworks
+    plugin: autotools
+    # source: # github https link / package name
+    # build-packages: [] # required to build
+    build-packages: [pkg-config, g++, make, git]
+    # stage-packages: [] # required to run
+    stage-packages: [gnome-themes-standard]
+# apps:
