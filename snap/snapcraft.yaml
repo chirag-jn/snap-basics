@@ -13,9 +13,15 @@ confinement: devmode # use 'strict' once you have the right plugs and slots
 architectures:
   - build-on: [armhf, arm64]
     run-on: [armhf, arm64]
+
+apps:
+  snap-basic-tut:
+    command: bin/snap_basic 
+    # relative to prime folder
+
 parts:
 # parts are used to describe your application, where its various components can be found, its build and run-time requirements, and those of its dependencies.
-  my-part: # arbitary
+  snap-basic-tut: # arbitary
     # See 'snapcraft plugins'
     # plugin: nil # commonly used frameworks
     plugin: autotools
