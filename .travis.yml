@@ -1,14 +1,16 @@
+language: bash
+sudo: required
 services:
 - docker
 after_success:
-- openssl aes-256-cbc -K $encrypted_c931aa26b336_key -iv $encrypted_c931aa26b336_iv
+- openssl aes-256-cbc -K $encrypted_c931aa26b336_key -iv $encrypted_c931aa26b336_key
   -in .snapcraft/travis_snapcraft.cfg
   -out .snapcraft/snapcraft.cfg -d
 deploy:
-  cleanup: true
+  skip_cleanup: true
   provider: script
-  script: docker run -v $(pwd):$(pwd) -t snapcore/snapcraft sh -c
-   "apt update -qq && cd $(pwd) &&
-   snapcraft && snapcraft push *.snap --release edge"
+  script: docker run -v $(pwd):$(pwd) -t snapcore:snapcraft sh -c
+        "apt update -qq && cd $(pwd) &&
+        snapcraft && snapcraft push *.snap --release edge"
   on:
-   branch: master
+        branch: master
