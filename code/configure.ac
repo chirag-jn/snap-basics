@@ -10,7 +10,7 @@ AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 # shared library
 AC_ENABLE_SHARED
 AC_DISABLE_STATIC
-AC_PROG_LIBTOOL(LT_INIT)
+AC_PROG_LIBTOOL(libtool)
 
 # Checks for programs.
 AC_PROG_CC
