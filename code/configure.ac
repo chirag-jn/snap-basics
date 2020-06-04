@@ -11,9 +11,9 @@ AM_PROG_AR # for linking non-posix archiver
 LT_INIT # required to initialize libtool
 
 # shared library
-AC_ENABLE_SHARED
-AC_DISABLE_STATIC
-AC_PROG_LIBTOOL(libtool)
+# AC_ENABLE_SHARED
+# AC_DISABLE_STATIC
+# AC_PROG_LIBTOOL(libtool)
 
 # Checks for programs.
 AC_PROG_CC
