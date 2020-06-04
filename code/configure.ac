@@ -8,7 +8,7 @@ AC_CONFIG_HEADERS([config.h])
 AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 AM_PROG_AR # for linking non-posix archiver
 
-LT_INIT
+LT_INIT # required to initialize libtool
 
 # shared library
 AC_ENABLE_SHARED
